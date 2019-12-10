@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/index.css" type="text/css"/>
+    <link rel="stylesheet" href="estilos/formulario.css" type="text/css"/>
+	<link rel="shortcut icon" href="imagenes/icon.png" type="imagen/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">HOJA DE SOLICITUD</h1>
+    <h1 style="text-align:center">DE CONTACTO</h1>
+    <nav id="Menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="formulario.html">Contáctanos</a></li>
+        </ul>
+        
+    </nav> 
+    <form>
+        <fieldset id="bloqueDatosPersonales">
+            <legend id="hola">Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Nombre:</td>
+                    <td>DNI</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nombre" /></td>
+                    <td><input type="text" name="apellidos" /></td>
+                    <td><input type="text" name="dni" /></td>
+                </tr>
+                <tr>
+                    <td>Localidad de Nacimiento</td>
+                    <td>Provincia:</td>
+                    <td>Fecha de Nacimiento</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="localidad" /></td>
+                    <td>
+                        <select name="provincia">
+                            <option>Huelva</option>
+                            <option selected="Selected">Sevilla</option>
+                            <option>Cádiz</option>
+                            <option>Córdoba</option>
+                            <option>Jaén</option>
+                            <option>Granada</option>
+                            <option>Málaga</option>
+                            <option>Almería</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" name="fecha" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dirección</td>
+                    <td>Código Postal:</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" size="40" name="direccion" />
+                    </td>
+                    <td>
+                        <input type="text" name="codpostal" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="bloqueDatosAdicionales">
+            <legend>Datos Adicionales</legend>
+			<br/>
+            <p>Que tipo de lenguajes de programación conoces:</p>
+            <ul>
+                <li><input type="checkbox" name="PHP" value="PHP" />PHP</li>
+                <li><input type="checkbox" name="SQL" value="SQL" />SQL</li>
+                <li><input type="checkbox" name="C" value="C" />C</li>
+                <li><input type="checkbox" name="C++" value="C++" />C++</li>
+                <li><input type="checkbox" name="C#" value="C#" />C#</li>
+                <li><input type="checkbox" name="JAVA" value="JAVA" />JAVA</li>
+            </ul>
+        </fieldset>
+        <p>
+            <input class="button" type="submit" value="Enviar Solicitud" />
+        </p>
+    </form>
+
+	<footer>
+        <p>Derechos reservados para el IES El Majuelo, 2019</p>
+    </footer>
+
+</body>
+
+</html>
