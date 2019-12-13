@@ -1,0 +1,140 @@
+section h2 {
+	font-family: 'Solway', cursive;
+	margin-top: 0%;
+	color: #2f8ddb;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 
+		1px 1px 1px #383838,
+		1px 2px 1px #383838,
+		1px 3px 1px #383838,
+		1px 4px 1px #383838,
+		1px 5px 1px #383838,
+		1px 6px 1px #383838,
+		1px 7px 1px #383838,
+		1px 8px 1px #383838,
+		1px 9px 1px #383838,
+		1px 10px 1px #383838,
+		1px 18px 6px rgba(16,16,16,0.4),
+		1px 22px 10px rgba(16,16,16,0.2),
+		1px 25px 35px rgba(16,16,16,0.2),
+		1px 30px 60px rgba(16,16,16,0.4);
+}
+
+body {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+article header h2{
+	text-align: left;
+	margin-top: 3%;
+	font-family: 'Solway', cursive;
+	color: #e67e22;
+	font-weight: bold;
+	margin-bottom: 3%;
+	font-size: 30px;
+	text-shadow: 
+		2px 1px black,
+		3px 2px black;
+}
+
+p {
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-justify: inter-word;
+}
+
+
+footer {
+	border: 3px;
+	border-color: #2f8ddb;
+	border-radius: 10px 10px;
+	border-style: outset;
+	padding: 0px 15px 15px 15px;
+	background-color: #2f8ddb;
+	margin-top: 40px;
+	margin: auto;
+  	width: 280px;
+}
+
+footer h2 {
+	text-align: center;
+	margin-top: 3%;
+	font-family: 'Solway', cursive;
+	color: #e67e22;
+	margin-bottom: 40px;
+	font-size: 30px;
+	text-shadow: 
+		2px 1px black,
+		3px 2px black;
+}
+
+footer p {
+	color: white;
+	font-weight: bold;
+}
+
+/* Cuando el tamaño de la pantalla sea de 900px o menos */
+@media screen and (max-width: 900px) {
+	section h2 {
+		font-size: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #383838;
+	}
+
+	article header h2{
+		font-size: 25px;
+		text-shadow: 1px 1px 1px #383838;
+	}
+
+	footer h2 {
+		font-size: 25px;
+		text-shadow: 1px 1px 1px #383838;
+	}
+
+	p {
+		font-weight: normal;
+	}
+
+	footer p {
+		font-weight: normal;
+	}
+
+}
+
+/* Cuando el menu esta arriba y esta desplegado en vertical */
+@media screen and (max-width: 500px) {
+	section h2 {
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #383838;
+	}
+
+	article header h2{
+		font-size: 20px;
+		text-shadow: 1px 1px 1px #383838;
+	}
+
+	p {
+		font-weight: normal;
+	}
+
+	footer {
+		width: 200px;
+	}
+	
+	footer h2 {
+		font-size: 20px;
+		text-shadow: 1px 1px 1px #383838;
+	}
+	
+	footer p {
+		font-weight: normal;
+	}
+
+}

@@ -1,0 +1,111 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body { 
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	
+	background-image: url("../imagenes/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgb(250,250,250);
+}
+
+
+/* El elemento que contiene el embed */
+main{
+	height: 98%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Este embed tiene el tamaño preparado cuando el menu esta a la izquierda */
+embed {
+	margin-left: 25%;
+	width: 74.9%;
+	height: 100%;
+	padding: 0px;
+}
+
+/* El menu completo */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	background-image: linear-gradient(to bottom, rgba(44,44,44,1) , rgba(44,44,44,0.5));
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+/* El texto del menu */
+nav ul li a {
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: white;
+    transition: all 0.3s linear;
+    font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	font-size: 25px;
+}
+
+/* Cuando se pasa el raton en el menu */
+nav ul li a:hover {
+	background-image:  linear-gradient(rgba(57,104,235,1) , rgba(57,104,235,0.2));
+}
+
+/* Cuando el menu esta arriba pero no desplegado en vertical */
+@media screen and (max-width: 900px) {
+	nav ul{
+		width: 100%;
+		height: 25%;
+		position: relative;
+		background-image: linear-gradient(to right, rgba(44,44,44,1) , rgba(44,44,44,0.5));
+	}
+  
+	nav ul li a {
+		float: left;
+		padding: 15px;
+	}
+
+		
+	main{
+		width: 99.9%;
+		height: 70%;
+	}
+
+	embed {
+		margin-left: 0;
+		margin-top: 3%;
+		width: 99.9%;
+		height: 100%;
+	}
+}
+
+/* Cuando el menu esta arriba y esta desplegado en vertical */
+@media screen and (max-width: 500px) {
+	nav ul li a {
+		text-align: center;
+		float: none;
+	}
+
+	nav ul {
+		background-image: linear-gradient(to bottom, rgba(44,44,44,1) , rgba(44,44,44,0.5));
+	}
+
+	main{
+		width: 99.9%;
+	}
+
+	embed {
+		width: 99.9%;
+	}
+}
+
