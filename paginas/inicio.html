@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../estilos/contenidos.css"/>
+    <link rel="stylesheet" type="text/css" href="../estilos/slideshow.css"/>
+    <script src="../scripts/slideshow.js"></script>
     <title>inicio</title>
+
+    
 </head>
 <body>
     <section>
@@ -20,6 +24,44 @@
             </header>
             <p>Son unas herramientas que ponen a disposición los navegadores permiten analizar el rápidamente el contenido y los recursos de las paginas web.</p>
         </article>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">Firefox</div>
+              <img src="../imagenes/firefox.png" style="width:100%" alt="No se puede ver illo">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">Google Chrome</div>
+              <img src="../imagenes/google.png" style="width:100%" alt="No se puede ver illo">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">Microsoft Edge</div>
+              <img src="../imagenes/edge.png" style="width:100%" alt="No se puede ver illo">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+        </script>
+        
+
     </section>
     <footer>
         <h2>Autores</h2>
