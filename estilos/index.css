@@ -9,19 +9,19 @@ html, body {
 }
 
 body {
-	
 	background-image: url("../imagenes/fondo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: rgb(250,250,250);
+	display: flex;
+	flex-direction: column;
 }
-
 
 /* El elemento que contiene el embed */
 main{
-	height: 98%;
 	margin: 0px;
 	padding: 0px;
+	flex-grow: 1;
 }
 
 /* Este embed tiene el tamaño preparado cuando el menu esta a la izquierda */
@@ -33,7 +33,7 @@ embed {
 }
 
 /* El menu completo */
-nav ul {
+#menu_completo {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -42,6 +42,21 @@ nav ul {
 	position: fixed;
 	height: 100%;
 	overflow: auto;
+	background-color: rgb(57,104,235);
+}
+
+#menu_oculto {
+	display: none;
+	background-color: rgb(57,104,235);
+}
+
+#enlace_superior {
+	background-image: linear-gradient(to top, rgba(44,44,44,1) , rgba(44,44,44,0.5));
+	background-color: rgb(57,104,235);
+}	
+
+#menu_oculto li ul {
+	display: none;
 }
 
 /* El texto del menu */
@@ -58,32 +73,32 @@ nav ul li a {
 
 /* Cuando se pasa el raton en el menu */
 nav ul li a:hover {
-	background-image:  linear-gradient(rgba(57,104,235,1) , rgba(57,104,235,0.2));
+	background-image: linear-gradient(rgba(57,104,235,1) , rgba(57,104,235,0.2));
 }
 
 /* Cuando el menu esta arriba pero no desplegado en vertical */
 @media screen and (max-width: 900px) {
-	nav ul{
+	#menu_completo{
 		width: 100%;
-		height: 25%;
+		height: 63px;
 		position: relative;
 		background-image: linear-gradient(to right, rgba(44,44,44,1) , rgba(44,44,44,0.5));
 	}
   
-	nav ul li a {
+	#menu_completo li a {
 		float: left;
 		padding: 15px;
 	}
 
 		
 	main{
+		left: 0px;
 		width: 99.9%;
-		height: 70%;
 	}
 
 	embed {
-		margin-left: 0;
-		margin-top: 3%;
+		margin-left: 0px;
+		margin-top: 0px;
 		width: 99.9%;
 		height: 100%;
 	}
@@ -98,6 +113,7 @@ nav ul li a:hover {
 
 	nav ul {
 		background-image: linear-gradient(to bottom, rgba(44,44,44,1) , rgba(44,44,44,0.5));
+		display: block;
 	}
 
 	main{
@@ -106,6 +122,19 @@ nav ul li a:hover {
 
 	embed {
 		width: 99.9%;
+	}
+	
+	#menu_oculto {
+		display: block;
+	}
+
+	#menu_oculto li:hover > ul{
+		display: block;
+		height: 244px;
+	}
+	
+	#menu_completo{
+		display: none;
 	}
 }
 

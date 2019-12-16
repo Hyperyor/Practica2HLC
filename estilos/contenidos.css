@@ -1,6 +1,17 @@
+html, body {
+	margin: 0px;
+    padding: 0px;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+
+/* Titulo de la pagina */
+
 section h2 {
 	font-family: 'Solway', cursive;
-	margin-top: 0%;
+	margin-top: 30px;
+	margin-bottom: 100px;
 	color: #2f8ddb;
 	font-weight: bold;
 	font-size: 60px;
@@ -23,11 +34,7 @@ section h2 {
 		1px 30px 60px rgba(16,16,16,0.4);
 }
 
-body {
-	padding-left: 3%;
-	padding-right: 3%;
-}
-
+/* Subtitulo de la pagina */
 article header h2{
 	text-align: left;
 	margin-top: 3%;
@@ -40,6 +47,8 @@ article header h2{
 		2px 1px black,
 		3px 2px black;
 }
+
+/* Texto de la pagina */
 
 p {
 	font-weight: bold;
@@ -83,17 +92,14 @@ footer p {
 		font-size: 40px;
 		text-align: center;
 		text-transform: uppercase;
-		text-shadow: 1px 1px 1px #383838;
 	}
 
 	article header h2{
 		font-size: 25px;
-		text-shadow: 1px 1px 1px #383838;
 	}
 
 	footer h2 {
 		font-size: 25px;
-		text-shadow: 1px 1px 1px #383838;
 	}
 
 	p {
@@ -112,12 +118,10 @@ footer p {
 		font-size: 30px;
 		text-align: center;
 		text-transform: uppercase;
-		text-shadow: 1px 1px 1px #383838;
 	}
 
 	article header h2{
 		font-size: 20px;
-		text-shadow: 1px 1px 1px #383838;
 	}
 
 	p {
@@ -130,7 +134,6 @@ footer p {
 	
 	footer h2 {
 		font-size: 20px;
-		text-shadow: 1px 1px 1px #383838;
 	}
 	
 	footer p {

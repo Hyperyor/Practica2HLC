@@ -1,0 +1,223 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+	padding-left: 3%;
+	padding-right: 3%;
+
+}
+
+/* Titulo general */
+h1 {
+	font-family: 'Solway', cursive;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	color: #2f8ddb;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 
+		1px 1px 1px #383838,
+		1px 2px 1px #383838,
+		1px 3px 1px #383838,
+		1px 4px 1px #383838,
+		1px 5px 1px #383838,
+		1px 6px 1px #383838,
+		1px 7px 1px #383838,
+		1px 8px 1px #383838,
+		1px 9px 1px #383838,
+		1px 10px 1px #383838,
+		1px 18px 6px rgba(16,16,16,0.4),
+		1px 22px 10px rgba(16,16,16,0.2),
+		1px 25px 35px rgba(16,16,16,0.2),
+		1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/* Titulos de los formularios */
+legend{
+	padding-left: 0px;
+    padding-right: 4px;
+	margin-bottom: 0px;
+	font-family: 'Solway', cursive;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 
+		2px 1px black,
+        3px 2px black;
+	color: #e67e22;
+}
+
+form{
+	display: inline-block;
+	width: 100%;
+}
+
+
+/* Las cajas que tienen los formularios */
+fieldset {
+    border: 3px;
+	border-color: #db3c2f;
+	border-radius: 10px 10px;
+	border-style: outset;
+	margin-bottom: 20px;
+	display: inline;
+	padding-bottom: 35px;
+}
+
+
+/* Texto que esta encima del formulario */
+p{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+/* Texto que esta encima del formulario */
+/* Texto del formulario de abajo */
+p, li{
+    font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+    text-justify: inter-word;	
+	color: white;
+}
+
+/* Caja que contiene cada caja de datos */
+div{
+	display: inline-block;
+	width: 100%;
+}
+
+/* Caja de datos personales */
+/* Caja de bloques de datos adicionales */
+#bloqueDatosPersonales, #bloqueDatosAdicionales {
+	margin: 0 auto;
+	width: 400px;
+	float: none;
+	display: block;
+}
+	
+/* Caja de datos personales */
+#bloqueDatosPersonales
+{
+    background-color: #75CA5B;
+    
+}
+
+/* Caja de bloques de datos adicionales */
+#bloqueDatosAdicionales
+{
+    background-color: #2f8ddb;
+	margin-top: 40px;
+}
+
+/* Lista de datos adicionales */
+li{
+    list-style-type: none;
+}
+
+/* Campos del formulario */
+.entrada_datos
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 250px;
+}
+
+/* Cuando pones el raton en encima de los campos del formulario */
+.entrada_datos:hover
+{
+	background: wheat;
+}
+
+
+footer{
+    margin-top: 50px;
+}
+
+/* Boton enviar falso*/
+.enlaceboton {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+	text-decoration: none;
+    background-color: #1D3782;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: block;
+	width: 47px;
+    color: white;
+	transform: scale(2,2);
+	padding: 4px;
+}
+
+
+.enlaceboton:link, .enlaceboton:visited {
+	border-style: outset;
+	border-color: #1D3782;
+}
+
+.enlaceboton:hover {
+    border-style: inset;
+	border-color: #1D3782;
+}
+
+
+
+/* Cuando el menu esta arriba y no esta desplegado en vertical */
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	legend {
+		font-size: 25px;
+	}
+
+	
+	p {
+		font-weight: normal;
+    }
+	
+    td{
+        display: block;
+    }
+
+	div{
+		display: inline-block;
+		width: 100%;
+	}
+	
+	#bloqueDatosPersonales, #bloqueDatosAdicionales {
+		margin: 0 auto;
+		width: 300px;
+		float: none;
+		display: block;
+	}
+	
+	#bloqueDatosAdicionales{
+		margin-top: 30px;
+	}
+	
+
+}
+
+/* Cuando el menu esta arriba y esta desplegado en vertical */
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	legend{
+		font-size: 20px;
+	}
+
+	p {
+		font-weight: normal;
+	}
+
+}

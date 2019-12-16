@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="estilos/index.css"/>
-		<link rel="icon" type="image/x-icon" href="imagenes/icono.ico"/>
+		<link rel="icon" type="image/png" href="imagenes/icono.png"/>
 		<title>Inicio</title>
 		<script>
 			function contenidos(enlace) {
@@ -19,12 +19,24 @@
 	</head>
 	<body>
 		<nav>
-			<ul>
-			  <li><a href="#" onclick="contenidos('paginas/inicio.html')">Inicio</a></li>
-			  <li><a href="#" onclick="contenidos('paginas/mozilla.html')">Mozilla</a></li>
-			  <li><a href="#" onclick="contenidos('paginas/chrome.html')">Chrome</a></li>
-			  <li><a href="#" onclick="contenidos('paginas/general.html')">general</a></li>
-			  <li><a href="#" onclick="contenidos('paginas/contacto.html')">Contacto</a></li>
+			<ul id="menu_completo">
+				<li><a href="#" onclick="contenidos('paginas/inicio.html')">Inicio</a></li>
+				<li><a href="#" onclick="contenidos('paginas/mozilla.html')">Mozilla</a></li>
+				<li><a href="#" onclick="contenidos('paginas/chrome.html')">Chrome</a></li>
+				<li><a href="#" onclick="contenidos('paginas/general.html')">general</a></li>
+				<li><a href="#" onclick="contenidos('paginas/contacto.html')">Contacto</a></li>
+			</ul>
+			<ul id="menu_oculto">
+				<li>
+					<a href="#" id="enlace_superior">Menu</a>
+					<ul>
+						<li><a href="#" onclick="contenidos('paginas/inicio.html')">Inicio</a></li>
+						<li><a href="#" onclick="contenidos('paginas/mozilla.html')">Mozilla</a></li>
+						<li><a href="#" onclick="contenidos('paginas/chrome.html')">Chrome</a></li>
+						<li><a href="#" onclick="contenidos('paginas/general.html')">general</a></li>
+						<li><a href="#" onclick="contenidos('paginas/contacto.html')">Contacto</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		<main id="main">
