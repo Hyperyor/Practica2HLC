@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../estilos/contacto.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+		<script src="../scripts/contacto.js"></script>
+        <title>Contáctanos</title>
+    </head>
+
+    <body>
+        <h1>HOJA DE SOLICITUD DE CONTACTO</h1>
+        <form>
+			<div>
+				<fieldset id="bloqueDatosPersonales">
+					<legend id="hola">Datos Personales</legend>
+					<table>
+						<tr>
+							<td>
+								<p>Nombre</p>
+								<input id="nombre" type="text" name="nombre" class="entrada_datos"/>
+							</td>
+							<td>
+								<p>Apellidos</p>
+								<input id="apellidos" type="text" name="apellidos" class="entrada_datos"/>
+							</td>
+							<td>
+								<p>DNI</p>
+								<input id="dni" type="text" name="dni" class="entrada_datos"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Localidad de Nacimiento</p>
+								<input id="localidad" type="text" name="localidad" class="entrada_datos"/>
+							</td>
+							<td>
+								<p>Provincia</p>
+								<select name="provincia" class="entrada_datos">
+									<option>Huelva</option>
+									<option selected="Selected">Sevilla</option>
+									<option>Cádiz</option>
+									<option>Córdoba</option>
+									<option>Jaén</option>
+									<option>Granada</option>
+									<option>Málaga</option>
+									<option>Almería</option>
+								</select>
+							</td>
+							<td>
+								<p>Fecha de Nacimiento</p>
+								<input id="fecha" type="date" name="fecha" class="entrada_datos"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Dirección</p>
+								<input id="direccion" type="text" name="direccion" class="entrada_datos"/>
+							</td>
+							<td colspan=2>
+								<p>Código Postal</p>
+								<input id="codpostal" type="text" name="codpostal" class="entrada_datos"/>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset id="bloqueDatosAdicionales">
+					<legend>Datos Adicionales</legend>
+					<p>Selecciona las tecnologias que conozcas:</p>
+					<ul>
+						<li><input id="checkhtml" type="checkbox" name="HTML5" value="HTML5" />HTML5</li>
+						<li><input id="checkcss" type="checkbox" name="CSS3" value="CSS3" />CSS3</li>
+						<li><input id="checkjava" type="checkbox" name="JAVASCRIPT" value="JAVASCRIPT" />JAVASCRIPT</li>
+					</ul>
+				</fieldset>
+			</div>
+        </form>
+        <footer>
+            <a href="#" class="enlaceboton" onClick="comprobacion()">Enviar</a>
+        </footer>
+
+    </body>
+
+</html>
