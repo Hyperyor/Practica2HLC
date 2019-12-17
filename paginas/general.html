@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Práctica HLC"/>
+    <meta name="keywords" content="HTML,CSS"/>
+    <meta name="author" content="Jose Luis Bernal Navarrete"/>
+    <meta name="author" content="Antonio Jesús Pacheco Tortosa"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../estilos/contenidos.css"/>
+    <title>general</title>
+</head>
+<body>
+    <section>
+        <h1>Conceptos comunes</h1>
+        <article>
+            <header>
+                <h2>Video explicativo</h2>
+            </header>
+            <video id="video_tutorial" controls>
+                <source src="../videos/video.mp4" type="video/mp4">
+                <source src="../videos/video.webm" type="video/webm">
+                No soportas videos, lo siento D:
+            </video>
+            <button id="boton_vueltas">No me pulses</button>
+        </article>
+        <article>
+                <header>
+                    <h2>Lo estas viendo desde</h2>
+                </header>
+                <picture>
+                    <source media="(min-width: 500px)" srcset="../imagenes/pc.png">
+                    <source media="(min-width: 10px)" srcset="../imagenes/smartphone.png">
+                    <img src="../imagenes/pc.png" alt="PC">
+                </picture>
+            </article>
+    </section>
+    <script>
+        document.getElementById("boton_vueltas").addEventListener("click", function(){
+            document.getElementById("video_tutorial").style.WebkitAnimation = "rotar 4s linear infinite";
+            document.getElementById("video_tutorial").style.animation = "rotar 4s linear infinite";
+        });
+    </script>
+</body>
+</html>
