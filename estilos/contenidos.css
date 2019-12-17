@@ -8,7 +8,7 @@ html, body {
 
 /* Titulo de la pagina */
 
-section h2 {
+h1 {
 	font-family: 'Solway', cursive;
 	margin-top: 30px;
 	margin-bottom: 100px;
@@ -35,7 +35,7 @@ section h2 {
 }
 
 /* Subtitulo de la pagina */
-article header h2{
+h2 {
 	text-align: left;
 	margin-top: 3%;
 	font-family: 'Solway', cursive;
@@ -52,6 +52,11 @@ article header h2{
 
 p {
 	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-justify: inter-word;
+}
+
+li {
 	font-family: "Times New Roman", Times, serif;
 	text-justify: inter-word;
 }
@@ -88,25 +93,17 @@ footer p {
 
 /* Cuando el tamaño de la pantalla sea de 900px o menos */
 @media screen and (max-width: 900px) {
-	section h2 {
+	h1 {
 		font-size: 40px;
 		text-align: center;
 		text-transform: uppercase;
 	}
 
-	article header h2{
-		font-size: 25px;
-	}
-
-	footer h2 {
+	h2{
 		font-size: 25px;
 	}
 
 	p {
-		font-weight: normal;
-	}
-
-	footer p {
 		font-weight: normal;
 	}
 
@@ -114,30 +111,18 @@ footer p {
 
 /* Cuando el menu esta arriba y esta desplegado en vertical */
 @media screen and (max-width: 500px) {
-	section h2 {
+	h1 {
 		font-size: 30px;
 		text-align: center;
 		text-transform: uppercase;
 	}
 
-	article header h2{
+	h2{
 		font-size: 20px;
-	}
-
-	p {
-		font-weight: normal;
 	}
 
 	footer {
 		width: 200px;
-	}
-	
-	footer h2 {
-		font-size: 20px;
-	}
-	
-	footer p {
-		font-weight: normal;
 	}
 
 }
