@@ -61,7 +61,6 @@ li {
 	text-justify: inter-word;
 }
 
-
 footer {
 	border: 3px;
 	border-color: #2f8ddb;
@@ -89,6 +88,56 @@ footer h2 {
 footer p {
 	color: white;
 	font-weight: bold;
+}
+
+
+/* Video tutorial */
+#video_tutorial {
+    width: 99.9%;
+    background: blue;
+	position: relative;
+	display: block;
+}
+
+/* Boton para que de vueltas*/
+#boton_vueltas {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+	text-decoration: none;
+    background-color: #1D3782;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	display: block;
+	width: 150px;
+	height: 50px;
+	color: white;
+}
+
+
+#boton_vueltas:link, #boton_vueltas:visited {
+	border-style: outset;
+	border-color: #1D3782;
+}
+
+#boton_vueltas:hover {
+    border-style: inset;
+	border-color: #1D3782;
+}
+
+picture{
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	width: 30%;
+}
+
+picture img{
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	width: 100%;
 }
 
 /* Cuando el tamaño de la pantalla sea de 900px o menos */
@@ -125,4 +174,11 @@ footer p {
 		width: 200px;
 	}
 
+}
+
+@keyframes rotar {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
