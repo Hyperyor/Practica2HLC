@@ -53,11 +53,11 @@ ENUNCIADO
 		}
 		Responsive por tamaño y por densidad de pixel.
 		
-	3.4.- Control de video para los tipos de ficheros más usados: webm y mp4.
+	*3.4.- Control de video para los tipos de ficheros más usados: webm y mp4.
 	
 	3.5.- Tamaño de imágenes según resolución (srcset)
 	
-4.- JavaScript
+*4.- JavaScript
 
 	*Funciones: alert(), console.log()Uso de objetos (Browser BOM): Window Navigator Screen History Location
 	*Uso de objetos (HTML DOM): Document, Elements, Attributes, Events, Style
@@ -68,7 +68,7 @@ ENUNCIADO
 	*document.getElementById("mienlace").style.backgroundColor="orange";
 	*< /script >
 	*Manejadores de eventos: onclick, onMouseOver, onMouseOut, de teclado y de ventana (onload).
-	Manejadores de eventos con addEventListener().
+	*Manejadores de eventos con addEventListener().
 	*Selectores o referencias: getElementsByTagName, gerElementById, getElementByClassName,
 	*querySelector, querySelectorAll().
 	*- Ejemplos básicos: mostrar o ocultar información (texto) y modificar los estilos.
