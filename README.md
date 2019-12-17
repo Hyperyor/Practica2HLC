@@ -55,7 +55,7 @@ ENUNCIADO
 		
 	*3.4.- Control de video para los tipos de ficheros más usados: webm y mp4.
 	
-	3.5.- Tamaño de imágenes según resolución (srcset)
+	*3.5.- Tamaño de imágenes según resolución (srcset)
 	
 *4.- JavaScript
 
