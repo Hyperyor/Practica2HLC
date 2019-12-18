@@ -20,21 +20,27 @@ function comprobacion()
     }    
     else
     {
+			cambiarFondoCampo(nombre, apellidos, dni, localidad, direccion, codpostal, fecha)
       if(isNaN(codpostal))
       {
+				cambiarFondoError(codpostal)
         alert("codigo postal no valido");
         errores = true;
       }
       if(!isNaN(fecha))
       {
-        alert("Fecha no valida");
+				alert("Fecha no valida");
+				cambiarFondoError(fecha)
         errores = true;
       }
       //comprobar formado de 8 numero seguido de letra
       if( !(/^\d{8}[A-Z]$/.test(dni)) ) {
+				cambiarFondoError(dni)
         alert("Dni no valido");
         errores = true;
-      }
+			}
+			
+			//cambiarFondoCampo(nombre, apellidos, dni, localidad, direccion, codpostal, fecha)
 
       comprobarCheckbox()
 
@@ -79,7 +85,7 @@ function cambiarFondoCampo(nombre, apellidos, dni, localidad, direccion, codpost
 		cambiarFondoCorrecto("apellidos");
 	}
 
-	if(dni == "")
+	if(dni == "" ||  !(/^\d{8}[A-Z]$/.test(dni)))
 	{
 		cambiarFondoError("dni");
 	}
@@ -106,7 +112,7 @@ function cambiarFondoCampo(nombre, apellidos, dni, localidad, direccion, codpost
 		cambiarFondoCorrecto("direccion");
 	}
 
-	if(codpostal == "")
+	if(codpostal == "" || isNaN(codpostal))
 	{
 		cambiarFondoError("codpostal");
 	}
@@ -115,7 +121,7 @@ function cambiarFondoCampo(nombre, apellidos, dni, localidad, direccion, codpost
 		cambiarFondoCorrecto("codpostal");
 	}
 
-	if(fecha == "")
+	if(fecha == "" )
 	{
 		cambiarFondoError("fecha");
 	}
